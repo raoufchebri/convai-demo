@@ -3,6 +3,7 @@ import "./globals.css";
 import {BackgroundWave} from "@/components/background-wave";
 import Link from "next/link";
 import {ElevenLabsLogo, GithubLogo} from "@/components/logos";
+import {ThemeWrapper} from "@/components/theme-wrapper";
 
 export const metadata: Metadata = {
     title: "ConvAI",
@@ -41,7 +42,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
                 </div>
             </nav>
             {children}
-            <BackgroundWave/>
+            <ThemeWrapper/>
         </div>
         </body>
         </html>
